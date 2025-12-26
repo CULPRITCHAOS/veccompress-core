@@ -1,0 +1,56 @@
+{
+  "name": "@veccompress/core",
+  "version": "0.1.0",
+  "description": "Production-ready vector compression with collapse detection - compress ML embeddings 10× while guaranteeing quality",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.esm.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "vector",
+    "compression",
+    "quantization",
+    "machine-learning",
+    "embeddings",
+    "ml",
+    "ai",
+    "collapse-detection",
+    "topology-preservation",
+    "browser-ml",
+    "webai",
+    "onnx",
+    "transformers"
+  ],
+  "author": "CULPRITCHAOS",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CULPRITCHAOS/veccompress-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CULPRITCHAOS/veccompress-core/issues"
+  },
+  "homepage": "https://github.com/CULPRITCHAOS/veccompress-core#readme",
+  "devDependencies": {
+    "@types/node": "^22.19.1",
+    "@vitest/ui": "^2.1.8",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
